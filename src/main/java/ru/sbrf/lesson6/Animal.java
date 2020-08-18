@@ -5,19 +5,19 @@ public class Animal {
         return "говорит \"" + sound + '-' + sound + "\"";
     }
 
-    public String swim(String how) {
+    protected String swim(String how) {
         return "плавает " + how;
     }
 
-    public String eat(String what) {
+    protected String eat(String what) {
         return "кушает " + what;
     }
 
-    public String move(String how) {
+    protected String move(String how) {
         return "двигается " + how;
     }
 
-    public String climb(String how) {
+    protected String climb(String how) {
         return "лазает по деревьям " + how;
     }
 
