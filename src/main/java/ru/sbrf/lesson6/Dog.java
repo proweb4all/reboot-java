@@ -1,9 +1,11 @@
 package ru.sbrf.lesson6;
 
-public class Dog extends Animal {
+public class Dog {
+    private Animal dog = new Animal();
+
     protected void description(String name) {
-        System.out.print("Собака " + name + ' ' + say("гав") + ", ");
-        System.out.print(climb("плохо") + ", но " + swim("хорошо") + ", ");
-        System.out.println(eat("мясо") + " и " + move("быстро"));
+        System.out.print("Собака " + name + ' ' + dog.say("гав") + ", ");
+        System.out.print(dog.climb("плохо") + ", но " + dog.swim("хорошо") + ", ");
+        System.out.println(dog.eat("мясо") + " и " + dog.move("быстро"));
     }
 }
